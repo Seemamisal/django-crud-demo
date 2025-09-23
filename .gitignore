@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+env/
+venv/
+ENV/
+venv.bak/
+*.env
+
+# Django
+*.sqlite3
+media/
+staticfiles/
+*.log
+
+# Byte-compiled / caches
+*.egg-info/
+dist/
+build/
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# mac
+.DS_Store
+
+# pipenv
+Pipfile.lock
