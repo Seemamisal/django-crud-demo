@@ -58,13 +58,13 @@ Endpoint	Method	Description
 
 ***Deployment***
 
+You can check the deployed application here:
+
 Public Live URL: https://django-crud-demo.onrender.com/
 
-Public Live URL: Home Page
+Admin Panel: https://django-crud-demo.onrender.com/admin/
 
-Admin Panel: Admin
-
-CRUD API: Tasks API
+API: https://django-crud-demo.onrender.com/api/tasks/
 
 Hosted on Render with PostgreSQL backend.
 
