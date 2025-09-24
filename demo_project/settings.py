@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 import dj_database_url
-from decouple import config  # python-decouple वापरून env read करतो
+from decouple import config
 
 # ------------------------------
 # BASE DIR
@@ -12,26 +12,25 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Secret Key & Debug
 # ------------------------------
 SECRET_KEY = config('SECRET_KEY', default='unsafe-secret-key')
-DEBUG = config('DEBUG', default=False, cast=bool)
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='').split(',')
+DEBUG = config('DEBUG', default=True, cast=bool)
+
+# ------------------------------
+# ALLOWED HOSTS
+# ------------------------------
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='127.0.0.1,localhost').split(',')
 
 # ------------------------------
 # Installed Apps
 # ------------------------------
 INSTALLED_APPS = [
-    # Default Django apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    # Third-party apps
     'rest_framework',
-
-    # Local apps
-    'tasks',  # तुमचा app
+    'tasks',
 ]
 
 # ------------------------------
